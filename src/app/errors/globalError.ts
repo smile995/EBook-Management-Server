@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from "express";
-import httpStatus from "http-status";
+import httpStatus from "http-status-codes";
 
 export const globalErrorHandler = (error: any, req: Request, res: Response, next: NextFunction) => {
     let statusCode = httpStatus.BAD_REQUEST;
