@@ -1,7 +1,9 @@
+import { ObjectId } from "mongoose";
+
 export interface ILibrary {
   _id: string; // ObjectId
   name: string;
-  user: string; // ref ObjectId (User collection)
+  user: ObjectId; // ref ObjectId (User collection)
   contactNo: string;
   address: string;
   geo_lat: string;
